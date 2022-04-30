@@ -1,0 +1,19 @@
+.footer__paragraph {
+    background-color: $break--color;
+    color: $font--color--secondary;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    .footer--button {
+        background-color: $button--primary;
+        color: $font--color--secondary;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 0 20px;
+        text-decoration: none;
+    }
+    .footer--button:hover {
+        background-color: $button--hover;
+    }
+}

@@ -1,0 +1,19 @@
+.nav__bar {
+    background-color: $primary--color;
+    padding: 20px 10px;
+    @include flex_display($direction: row, $alignment: space-between);
+    h5 {
+        color: $font--color--secondary;
+        font-size: $font--size--medium;
+    }
+    .nav__bar--buttons a {
+        color: $font--color--secondary;
+        text-decoration: none;
+        margin: 0 10px;
+        padding-bottom: 5px;
+        border-bottom: transparent 1px solid;   
+    }
+    .nav__bar--buttons a:hover {
+        border-bottom: $font--color--secondary 1px solid;
+    }
+}

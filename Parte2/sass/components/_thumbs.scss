@@ -1,0 +1,26 @@
+.container {
+    @include flex_display($direction: row, $alignment: space-around);
+    flex-wrap: wrap;
+}
+
+.thumb__news {
+    @include flex_display($direction: column, $alignment: center);
+    max-width: 250px;
+    border-top: 5px green solid;
+    margin-top: 30px;
+    .thumb__news--title {
+        margin: 10px;
+        font-size: $font--size--medium;
+    }
+    .thumb__news--description {
+        line-height: $font--size--medium;
+        text-align: center;
+        background-color: #f4f4f4;
+        border-radius: 5px 0 5px 0;
+    }
+}
+
+.thumb__news__pairs {
+    @extend .thumb__news;
+    border-top: 5px orange solid;
+}

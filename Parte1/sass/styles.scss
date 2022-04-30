@@ -1,0 +1,101 @@
+$color--primario: #1acc88;
+$color--secundario: #1d9e75;
+$ancho--card: 400px;
+$font-family--primaria: Arial;
+$font-size--small: 1em;
+$font-size--medium: 1.5em;
+$font-size--large: 2em;
+
+// MIXINS
+@mixin theme_boxes($width: 200px, $background: #fff){
+    width: $width;
+    background-color: $background;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@mixin flex_display($direction: row, $alingment: center) {
+    display: flex;
+    justify-content: $alingment;
+    flex-direction: $direction;
+    align-items: $alingment;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family--primaria;
+}
+
+h1 {
+    color: red;
+}
+
+// ANIDACION
+.nav__bar {
+    background-color: $color--secundario;
+    padding: 20px;
+    @include flex_display($direction: row, $alingment: space-between);
+    .nav__bar--links {
+        margin: 0 10px;
+        padding: 5px 0;
+        color: #fff;
+        text-decoration: none;
+        font-family: $font-family--primaria;
+        border-bottom: transparent 1px solid;
+    }
+    .nav__bar--links:hover {
+        border-bottom: #fff 1px solid;
+    }
+}
+
+// .caja {
+//     @include theme_boxes($width: 400px, $background: $color--primario)
+// }
+
+// .caja_secundaria {
+//     @include theme_boxes($width: 200px, $background: $color--secundario)
+// }
+
+.container {
+    @include flex_display($direction: row, $alingment: space-around);
+    flex-wrap: wrap;
+    @media only screen and (max-width: 575px) {
+        @include flex_display($direction: column, $alingment: center);
+    }
+}
+
+.thumb__news {
+    @include flex_display($direction: column, $alingment: center);
+    max-width: 250px;
+    border-top: 5px $color--primario solid;
+    margin-top: 30px;
+    .thumb__news--title {
+        margin: 10px;
+        font-size: $font-size--medium;
+    }
+    .thumb__news--description {
+        line-height: $font-size--medium;
+        text-align: center;
+        border-radius: 5px 0 5px 0;
+    }
+}
+
+.thumb__news__pairs {
+    @extend .thumb__news;
+    border-top: 5px orange solid; 
+}
+
+.btn {
+    border: none;
+    background-color: $color--primario;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: $color--secundario;
+}

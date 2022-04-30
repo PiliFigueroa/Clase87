@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+.nav__bar {
+  background-color: rgb(0, 88, 147);
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: space-between;
+}
+.nav__bar h5 {
+  color: #fff;
+  font-size: 1.5em;
+}
+.nav__bar .nav__bar--buttons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding-bottom: 5px;
+  border-bottom: transparent 1px solid;
+}
+.nav__bar .nav__bar--buttons a:hover {
+  border-bottom: #fff 1px solid;
+}
+
+.banner {
+  background-image: url("https://www.localiza.com/argentina-site/es-ar/viaja-en-auto/PublishingImages/Banner_TopSalta.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.banner .banner--title {
+  color: #fff;
+  font-size: 4em;
+  padding: 30px;
+  border: #fff 1px solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: space-around;
+  flex-wrap: wrap;
+}
+
+.thumb__news, .thumb__news__pairs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  border-top: 5px green solid;
+  margin-top: 30px;
+}
+.thumb__news .thumb__news--title, .thumb__news__pairs .thumb__news--title {
+  margin: 10px;
+  font-size: 1.5em;
+}
+.thumb__news .thumb__news--description, .thumb__news__pairs .thumb__news--description {
+  line-height: 1.5em;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 5px 0 5px 0;
+}
+
+.thumb__news__pairs {
+  border-top: 5px orange solid;
+}
+
+.footer__paragraph {
+  background-color: rgb(114, 29, 189);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+.footer__paragraph .footer--button {
+  background-color: rgb(4, 163, 86);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 20px;
+  text-decoration: none;
+}
+.footer__paragraph .footer--button:hover {
+  background-color: rgb(8, 201, 108);
+}
+
+/*# sourceMappingURL=styles.css.map */

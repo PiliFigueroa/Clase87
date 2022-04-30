@@ -1,0 +1,15 @@
+.banner {
+    background-image: url('https://www.localiza.com/argentina-site/es-ar/viaja-en-auto/PublishingImages/Banner_TopSalta.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    @include flex_display($direction: column, $alignment: center);
+    .banner--title {
+        color: $font--color--secondary;
+        font-size: $font--size--large + 2em;
+        padding: 30px;
+        border: #fff 1px solid;
+        border-radius: 10px;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+    }
+}
